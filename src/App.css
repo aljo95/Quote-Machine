@@ -1,0 +1,125 @@
+html, body{
+    height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+  background-color: lightgray;
+}
+
+#quote-box {
+  width: 550px;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  z-index: 1;
+  margin-bottom: 15%;
+}
+
+#text-box {
+  height: 85%;
+}
+
+#text {
+  position: relative;
+  top: -10%;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  font-size: 28px;
+  font-family: Raleway, sans-serif;
+}
+
+#author-text {
+  position: relative;
+  top: 0%;
+  font-size: 18px;
+  text-align: end;
+  padding-right: 10%;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
+#pre-text {
+  position: relative;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  padding-bottom: 5%;
+  height: 68%;
+  font-size: 23px;
+  top: 20%;
+  transition: color 3s;
+  font-family: Raleway, sans-serif;
+}
+
+#btns {
+  position: relative;
+  top: -10%;
+  left: 5%;
+  display:flex;
+  justify-content:space-between ;
+  align-items: center;
+  height: 15%;
+  width: 90%;
+  z-index: 0;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+#new-quote {
+  height: 35px;
+  width: 20%;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 1s;
+  color: white;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  background-color: white;
+}
+
+#tweet-quote {
+  padding-top: 2.5px;
+  height: 35px;
+  width: 10%;
+  text-align: center;
+  margin-left: 10px;
+  z-index: 2;
+  transition: background-color 1s;
+  font-size: 22px;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  background-color: white;
+}
+
+.fade-in {
+  animation: fadein 1s;
+}
+
+.fade-out {
+  animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
